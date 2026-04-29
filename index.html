@@ -69,18 +69,21 @@ body{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a1a;background:#fff;mi
 .nav-card-desc{font-size:12px;color:#aaa;margin:0}
 .nav-arrow{color:#ccc;font-size:18px;flex-shrink:0}
 .featured-label{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#aaa;margin:0 0 1rem}
-.project-banner{border:1px solid #ebebeb;border-radius:16px;overflow:hidden;cursor:pointer;display:block;transition:transform .15s,box-shadow .15s;text-decoration:none;color:inherit}
-.project-banner:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.project-banner{border:1px solid #ebebeb;border-radius:16px;overflow:hidden;display:block;color:inherit}
 .proj-header{background:linear-gradient(135deg,#0D2B45,#1D6B6B);padding:24px 28px;display:flex;align-items:center;gap:14px}
 .proj-logo{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,#3B82F6,#2DD4BF);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(59,130,246,.4);flex-shrink:0}
 .proj-wordmark{font-size:17px;font-weight:700;color:#fff}
-.proj-sub{font-size:11px;color:#4A8A5A;font-weight:600;margin-top:1px}
+.proj-sub{font-size:11px;color:#2DD4BF;font-weight:600;margin-top:1px}
 .proj-badge{margin-left:auto;background:rgba(45,212,191,.15);border:1px solid rgba(45,212,191,.3);color:#2DD4BF;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;white-space:nowrap}
 .proj-body{padding:22px 28px}
 .proj-desc{font-size:14px;color:#555;line-height:1.75;margin:0 0 16px}
 .proj-tags{display:flex;flex-wrap:wrap;gap:8px}
 .proj-tag{font-size:11px;font-weight:600;color:#0F6E56;background:#e8f8f1;border-radius:20px;padding:3px 10px}
 .proj-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:600;color:#1D6B6B}
+.proj-action-btn{display:inline-flex;align-items:center;font-size:13px;font-weight:600;padding:8px 18px;border-radius:8px;text-decoration:none;transition:opacity .15s,transform .15s}
+.proj-action-btn:hover{opacity:.88;transform:translateY(-1px)}
+.proj-action-primary{background:linear-gradient(135deg,#3B82F6,#2DD4BF);color:#fff}
+.proj-action-ghost{background:transparent;color:#1D6B6B;border:1.5px solid #1D6B6B}
 
 /* ── STORY ── */
 .chapters{display:flex;flex-direction:column}
@@ -258,16 +261,19 @@ body{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a1a;background:#fff;mi
       <div class="nav-card" onclick="showPage('projects')"><div class="nav-card-left"><span class="nav-card-icon">📁</span><div><p class="nav-card-name">Projects</p><p class="nav-card-desc">Hands-on creation</p></div></div><span class="nav-arrow">›</span></div>
     </div>
     <p class="featured-label">Featured Project</p>
-    <div class="project-banner" onclick="window.open('https://tracingcare-demo.vercel.app/login','_blank')">
+    <div class="project-banner">
       <div class="proj-header">
         <div class="proj-logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <div><div class="proj-wordmark">Tracing Care</div><div class="proj-sub">Patient Portal · In Development</div></div>
-        <span class="proj-badge">🚧 Live Demo</span>
+        <div><div class="proj-wordmark">Tracing Care</div><div class="proj-sub">Patient Health Platform · In Development</div></div>
+        <span class="proj-badge">🚧 In Progress</span>
       </div>
       <div class="proj-body">
         <p class="proj-desc">A patient-first health platform giving people real, granular control over their health data — who sees it, when, and why. Built with a real-time data access log, caregiver hub, and ethical research participation tools.</p>
-        <div class="proj-tags"><span class="proj-tag">Health Informatics</span><span class="proj-tag">UX Design</span><span class="proj-tag">Patient Data Privacy</span><span class="proj-tag">React</span><span class="proj-tag">WCAG Accessibility</span></div>
-        <div class="proj-link">View live demo →</div>
+        <div class="proj-tags"><span class="proj-tag">Health Informatics</span><span class="proj-tag">UX Design</span><span class="proj-tag">Patient Data Privacy</span><span class="proj-tag">Next.js</span><span class="proj-tag">WCAG Accessibility</span></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;">
+          <a href="https://tracingcare-demo.vercel.app/login" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-action-primary">View Live Demo</a>
+          <a href="https://www.tracingcare.info" target="_blank" rel="noopener noreferrer" class="proj-action-btn proj-action-ghost">Learn More</a>
+        </div>
       </div>
     </div>
   </div>
