@@ -216,6 +216,37 @@ body{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a1a;background:#fff;mi
   .hp-photo{width:180px;height:180px}
   .footer{padding:24px 16px;flex-direction:column;align-items:flex-start}
 }
+
+/* Experience: career path + where I fit */
+.tr-list{position:relative;margin:0 0 3rem;padding-left:28px}
+.tr-list:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:#e3efe9}
+.tr-step{position:relative;padding:0 0 1.6rem}
+.tr-step:last-child{padding-bottom:0}
+.tr-dot{position:absolute;left:-28px;top:4px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid #1D9E75}
+.tr-step.now .tr-dot{background:#1D9E75}
+.tr-years{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#0F6E56;margin:0 0 2px}
+.tr-title{font-family:'Lora',serif;font-size:19px;font-weight:500;color:#111;margin:0 0 2px}
+.tr-where{font-size:13px;color:#999;margin:0 0 .4rem}
+.tr-body{font-size:14.5px;color:#555;line-height:1.75;margin:0}
+.fit-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin:0 0 3rem}
+.fit-card{border:1px solid #ebebeb;border-radius:14px;padding:1.25rem 1.35rem;background:#fff}
+.fit-name{font-size:15px;font-weight:600;color:#111;margin:0 0 .45rem}
+.fit-why{font-size:14px;color:#555;line-height:1.7;margin:0 0 .85rem}
+.fit-proof{display:flex;flex-wrap:wrap;gap:6px}
+.fit-proof span{font-size:11.5px;color:#0F6E56;background:#e8f8f1;border-radius:99px;padding:3px 10px}
+.goal-card{border-left:4px solid #1D9E75;background:#f3faf7;border-radius:0 14px 14px 0;padding:1.5rem 1.75rem;margin:0 0 1rem}
+.goal-title{font-family:'Lora',serif;font-size:clamp(18px,2.6vw,22px);font-weight:500;line-height:1.45;color:#0b3d30;margin:0 0 .6rem}
+.goal-body{font-size:14.5px;color:#555;line-height:1.75;margin:0}
+.fit-list{margin:0 0 .9rem;padding-left:1.1rem}
+.fit-list li{font-size:14px;color:#555;line-height:1.7;margin:0 0 .45rem}
+.fit-list li::marker{color:#1D9E75}
+.fit-list b{color:#111;font-weight:600}
+.goal-sub{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#0F6E56;margin:1.4rem 0 .8rem;padding-top:1.1rem;border-top:1px solid #d6ece3}
+.goal-group{margin:0 0 .8rem}
+.goal-group:last-child{margin-bottom:0}
+.goal-label{font-size:13px;font-weight:600;color:#111;margin:0 0 .4rem}
+.goal-chips{display:flex;flex-wrap:wrap;gap:6px}
+.goal-chips span{font-size:12.5px;color:#0b3d30;background:#fff;border:1px solid #c0ead8;border-radius:99px;padding:4px 12px;line-height:1.4}
 </style>
 </head>
 <body>
@@ -314,94 +345,65 @@ body{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a1a;background:#fff;mi
   <div class="back-bar"><button class="page-back" onclick="showPage('home')" aria-label="Back to home"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Back to Home</button></div>
   <div class="wrap">
     <span class="tag">Professional experience</span>
-    <h2 class="section-title">Every role left things better than I found them.</h2>
-    <p class="intro-text">From retail floors to research labs to logistics, the through line has always been the same: find the friction, fix the system, make it stick.</p>
+    <h2 class="section-title">Different industries, the same strengths.</h2>
+    <p class="intro-text">My career has moved from tech support to operations, research, and now healthcare. Each step added skills I bring to healthcare and research teams today. Here is the path, and where it fits.</p>
 
-    <!-- Solara Vita -->
-    <div class="job">
-      <div class="job-header"><div class="job-logo logo-gold">SV</div><div><p class="job-company">Solara Vita</p><p class="job-meta">Founder · Aug 2026 – Present · South Florida · Remote/On-site</p></div></div>
-      <div class="role-block">
-        <p class="role">Founder &amp; Digital Navigator</p>
-        <p class="job-body">Founded Solara Vita, a South Florida practice that helps older adults and their families build confidence with everyday technology and online health tools.</p>
-        <ul class="bullets">
-          <li><span class="bdot dot-gold"></span><span>Provide one-on-one and small group support so seniors can use smartphones, tablets, patient portals, telehealth, and online benefit services on their own</span></li>
-          <li><span class="bdot dot-gold"></span><span>Lead free community tech workshops for older adults in partnership with local public libraries</span></li>
-          <li><span class="bdot dot-gold"></span><span>Teach online safety and scam awareness so seniors can spot fraud and protect their personal and health information</span></li>
-        </ul>
-        <hr style="border:none;border-top:1px solid #f0f0f0;margin:0 0 1rem"/>
-        <span class="impact imp-gold">Helping older adults build confidence with the technology they need for their health and daily life</span>
-      </div>
+    <p class="section-label">My path</p>
+    <div class="tr-list">
+      <div class="tr-step"><span class="tr-dot"></span><p class="tr-years">2015 – 2018</p><p class="tr-title">Helping people with technology</p><p class="tr-where">Apple Retail</p><p class="tr-body">Started in sales and moved into technical support. Learned to explain technology in plain terms, solve problems on the spot, and protect customer data.</p></div>
+      <div class="tr-step"><span class="tr-dot"></span><p class="tr-years">2019 – 2021</p><p class="tr-title">Building operations</p><p class="tr-where">Lyft · Transdev</p><p class="tr-body">Joined a brand-new department at Lyft and helped build its daily operations, cutting errors by 30%. At Transdev, ran fleet scheduling and kept records for reporting and compliance.</p></div>
+      <div class="tr-step"><span class="tr-dot"></span><p class="tr-years">2020 – 2026</p><p class="tr-title">Running research operations</p><p class="tr-where">Tech Mahindra · Voxelmaps · Tata Elxsi</p><p class="tr-body">Grew from study moderator to project manager. Ran participant scheduling, onboarding, documentation, and tracking across multiple sites and projects at once.</p></div>
+      <div class="tr-step"><span class="tr-dot"></span><p class="tr-years">2024 – 2026</p><p class="tr-title">Moving into healthcare</p><p class="tr-where">Caregiving · GPI Medical Center</p><p class="tr-body">Cared for a family member through cancer treatment, then worked a clinic front desk, keeping patient records current in the EHR and helping patients use the portal.</p></div>
+      <div class="tr-step now"><span class="tr-dot"></span><p class="tr-years">2026 – Present</p><p class="tr-title">Digital navigation</p><p class="tr-where">Solara Vita · digitalLIFT</p><p class="tr-body">Founded Solara Vita to help older adults use health technology with confidence, and volunteer as a digital navigator with digitalLIFT.</p></div>
     </div>
 
-    <!-- GPI Medical Center -->
-    <div class="job">
-      <div class="job-header"><div class="job-logo logo-green">GP</div><div><p class="job-company">GPI Medical Center</p><p class="job-meta">Contract · Jul 2026 – Aug 2026 · Pompano Beach, FL · On-site</p></div></div>
-      <div class="role-block"><p class="role">Front Desk Coordinator</p><p class="job-body">Gaining hands-on experience with patient flow, EHR systems, and healthcare operations to support my graduate education and career transition into health informatics.</p><ul class="bullets"><li><span class="bdot dot-green"></span><span>Navigate the EHR system to update and maintain accurate patient records</span></li><li><span class="bdot dot-green"></span><span>Support patients through the patient portal, helping with access, messaging, and records requests</span></li><li><span class="bdot dot-green"></span><span>Serve as the first point of contact for patient communication, in person and by phone</span></li><li><span class="bdot dot-green"></span><span>Handle appointment booking and process patient payments at the front desk</span></li></ul><hr style="border:none;border-top:1px solid #f0f0f0;margin:0 0 1rem"/><span class="impact imp-green">Hands-on, day-to-day healthcare operations experience at the front line of patient care</span></div>
+    <p class="section-label">Where I fit</p>
+    <div class="fit-grid">
+      <div class="fit-card"><p class="fit-name">Research Operations</p><p class="fit-why">Over five years running the day-to-day side of research.</p><ul class="fit-list">
+        <li><b>Tech Mahindra:</b> Grew from study moderator to site manager to project manager, running participant sessions, scheduling, and on-site operations.</li>
+        <li><b>Voxelmaps:</b> Oversaw scheduling, onboarding, and progress tracking for participants across several projects at once.</li>
+        <li><b>Tata Elxsi:</b> Managed participant and venue scheduling across multiple locations.</li>
+      </ul><div class="fit-proof"><span>Tech Mahindra</span><span>Voxelmaps</span><span>Tata Elxsi</span></div></div>
+      <div class="fit-card"><p class="fit-name">Clinical Research</p><p class="fit-why">My research operations work carries over to clinical study support.</p><ul class="fit-list">
+        <li><b>Research roles:</b> Coordinated participants, kept documentation accurate, and followed set processes across multiple studies.</li>
+        <li><b>GPI Medical Center:</b> Kept patient records current in the EHR and helped patients use the patient portal.</li>
+        <li><b>Training:</b> HIPAA certified and completing CITI Good Clinical Practice training.</li>
+      </ul><div class="fit-proof"><span>Research ops roles</span><span>GPI Medical Center</span><span>HIPAA</span><span>CITI GCP (in progress)</span></div></div>
+      <div class="fit-card"><p class="fit-name">Project Coordination</p><p class="fit-why">Managed schedules, resources, and timelines as a project manager on several projects, and built the trackers that kept teams on the same page.</p><ul class="fit-list">
+        <li><b>Tech Mahindra:</b> Aligned participant availability, team resources, and timelines, and resolved scheduling conflicts before they caused delays.</li>
+        <li><b>Voxelmaps:</b> Built dashboards to track scheduling status, participation rates, and team performance.</li>
+        <li><b>Tata Elxsi:</b> Served as the link between internal teams during a reorganization, resolving conflicts and keeping work moving.</li>
+      </ul><div class="fit-proof"><span>Tech Mahindra</span><span>Voxelmaps</span><span>Tata Elxsi</span></div></div>
+      <div class="fit-card"><p class="fit-name">Workflow Optimization</p><p class="fit-why">I find where work gets stuck and fix it.</p><ul class="fit-list">
+        <li><b>Lyft:</b> Planned opening shifts around traffic flow so rental cars were ready faster, increasing vehicle readiness and the number of cars available to book.</li>
+        <li><b>Tech Mahindra and Voxelmaps:</b> Noticed participants being booked without meeting study requirements. Fixed the communication and documentation gaps behind it by updating process documents and training recruiters on what to check and who to ask, lowering rejection rates.</li>
+        <li><b>Tata Elxsi:</b> Built a shared tracker for venue status, qualifications, and next steps, which reduced venue recruitment delays, kept venues compliant, and gave the team accurate data to work from.</li>
+      </ul><div class="fit-proof"><span>Lyft</span><span>Tech Mahindra</span><span>Voxelmaps</span><span>Tata Elxsi</span></div></div>
+      <div class="fit-card"><p class="fit-name">Vendor Relations</p><p class="fit-why">I build and keep good working relationships with outside partners.</p><ul class="fit-list">
+        <li><b>Tata Elxsi:</b> Built working relationships with multiple venue recruitment vendors and venue owners, sharing clear requirements and guiding each venue through qualification and next steps.</li>
+        <li><b>Tech Mahindra:</b> Worked with outside vendors to keep our research sites supplied and secure.</li>
+        <li><b>Solara Vita:</b> Built community partnerships with local public libraries to host free tech workshops.</li>
+      </ul><div class="fit-proof"><span>Tata Elxsi</span><span>Tech Mahindra</span><span>Solara Vita</span></div></div>
+      <div class="fit-card"><p class="fit-name">Hiring &amp; Training Support</p><p class="fit-why">I help get new people set up and ready to do the job well.</p><ul class="fit-list">
+        <li><b>Tech Mahindra and Voxelmaps:</b> Trained recruiters on what to check and who to contact with questions, lowering participant rejection rates.</li>
+        <li><b>Tech Mahindra, Voxelmaps, and Tata Elxsi:</b> Managed onboarding by collecting, reviewing, and tracking documentation.</li>
+        <li><b>Solara Vita:</b> Teach technology to adults through one-on-one sessions and group workshops.</li>
+      </ul><div class="fit-proof"><span>Tech Mahindra</span><span>Voxelmaps</span><span>Tata Elxsi</span><span>Solara Vita</span></div></div>
+      <div class="fit-card"><p class="fit-name">Digital Navigation</p><p class="fit-why">Helping people with technology is where I started and where I am now. I hold the Goodwill Digital Navigator Specialization.</p><ul class="fit-list">
+        <li><b>Apple:</b> Diagnosed and solved tech problems and explained the fixes in plain terms.</li>
+        <li><b>Solara Vita:</b> Help older adults use smartphones, patient portals, telehealth, and online benefit services on their own.</li>
+        <li><b>digitalLIFT:</b> Volunteer digital navigator, helping learners get connected and find low-cost internet, telehealth tools, and community resources.</li>
+      </ul><div class="fit-proof"><span>Apple</span><span>Solara Vita</span><span>digitalLIFT</span></div></div>
     </div>
 
-    <!-- Tata Elxsi -->
-    <div class="job">
-      <div class="job-header"><div class="job-logo logo-teal">TE</div><div><p class="job-company">Tata Elxsi Ltd</p><p class="job-meta">Full-time · Nov 2024 – May 2026 · Santa Clara, CA · Hybrid</p></div></div>
-      <div class="role-block"><p class="role">Project Manager, UX Operations</p><p class="job-body">Stepped in during a period of organizational restructuring and brought order to participant coordination, venue logistics, and cross-team communication.</p><ul class="bullets"><li><span class="bdot dot-teal"></span><span>Managed participant and venue scheduling across multiple locations</span></li><li><span class="bdot dot-teal"></span><span>Coordinated onboarding by collecting, reviewing, and tracking documentation</span></li><li><span class="bdot dot-teal"></span><span>Served as connective tissue between internal teams, resolving conflicts, keeping things moving</span></li><li><span class="bdot dot-teal"></span><span>Built and maintained tracking systems that gave the team operational visibility</span></li></ul><hr style="border:none;border-top:1px solid #f0f0f0;margin:0 0 1rem"/><span class="impact imp-teal">Improved coordination workflows and reduced scheduling delays</span></div>
-    </div>
-
-    <!-- Break -->
-    <div class="break-card"><div class="break-icon">♥</div><div><p class="break-label">Career break</p><p class="break-title">Caregiving</p><p class="break-date">May 2024 – Oct 2024 · 6 months · Florida</p><p class="break-body">Provided direct care for a family member undergoing cancer treatment, while completing coursework in Patient Safety and Medical Billing and Coding. Deepened my understanding of healthcare operations.</p></div></div>
-
-    <!-- Voxelmaps -->
-    <div class="job">
-      <div class="job-header"><div class="job-logo logo-purple">VM</div><div><p class="job-company">Voxelmaps Inc</p><p class="job-meta">Contract · Mar 2023 – Apr 2024 · Remote</p></div></div>
-      <div class="role-block"><p class="role">UX Operations Manager</p><ul class="bullets"><li><span class="bdot dot-purple"></span><span>Oversaw scheduling, onboarding, and progress tracking for participants across multiple concurrent projects</span></li><li><span class="bdot dot-purple"></span><span>Developed dashboards to monitor scheduling status, participation rates, and operational performance</span></li><li><span class="bdot dot-purple"></span><span>Ensured documentation accuracy and adherence to established processes</span></li><li><span class="bdot dot-purple"></span><span>Communicated clearly across teams and stakeholders</span></li></ul><hr style="border:none;border-top:1px solid #f0f0f0;margin:0 0 1rem"/><span class="impact imp-purple">Consistent, coordinated execution across distributed teams</span></div>
-    </div>
-
-    <!-- Tech Mahindra -->
-    <div class="job">
-      <div class="job-header"><div class="job-logo logo-blue">TM</div><div><p class="job-company">Tech Mahindra Ltd</p><p class="job-meta">Contract · Aug 2020 – Mar 2023 · Multiple locations</p></div></div>
-      <div class="role-block"><p class="role">UX Project Manager</p><p class="role-meta">May 2022 – Mar 2023 · Burlingame, CA</p><ul class="bullets"><li><span class="bdot dot-blue"></span><span>Coordinated project schedules, aligning participant availability, team resources, and timelines</span></li><li><span class="bdot dot-blue"></span><span>Maintained accurate records and tracking systems to support reporting and operational needs</span></li><li><span class="bdot dot-blue"></span><span>Identified and resolved scheduling conflicts for smooth execution of research sessions</span></li></ul></div>
-      <div class="role-block"><p class="role">UX Site Manager</p><p class="role-meta">Aug 2021 – May 2022 · Pasadena, CA</p><ul class="bullets"><li><span class="bdot dot-blue"></span><span>Managed scheduling and logistics for participant sessions including daily schedules and on-site operations</span></li><li><span class="bdot dot-blue"></span><span>Oversaw onboarding processes, including documentation collection and verification</span></li></ul></div>
-      <div class="role-block"><p class="role">Lead User Study Moderator</p><p class="role-meta">Aug 2020 – Feb 2021 · San Diego, CA</p><ul class="bullets"><li><span class="bdot dot-blue"></span><span>Facilitated research sessions and ensured accurate documentation and data collection</span></li><li><span class="bdot dot-blue"></span><span>Communicated clearly with participants to ensure understanding of processes and expectations</span></li></ul><hr style="border:none;border-top:1px solid #f0f0f0;margin:0 0 1rem"/><span class="impact imp-blue">Progressed through three roles, each with more scope, more scale, smoother operations</span></div>
-    </div>
-
-    <!-- Transdev -->
-    <div class="job">
-      <div class="job-header"><div class="job-logo logo-amber">TD</div><div><p class="job-company">Transdev</p><p class="job-meta">Full-time · Mar 2021 – Aug 2021 · San Francisco, CA</p></div></div>
-      <div class="role-block"><p class="role">Fleet Deployment Specialist</p><p class="role-meta">May 2021 – Aug 2021</p><ul class="bullets"><li><span class="bdot dot-amber"></span><span>Coordinated daily fleet scheduling and deployment, aligning driver availability, routes, and service requirements</span></li><li><span class="bdot dot-amber"></span><span>Maintained detailed operational records and tracking systems for reporting and compliance</span></li></ul></div>
-      <div class="role-block"><p class="role">Self-Driving Vehicle Operator</p><p class="role-meta">Mar 2021 – May 2021</p><ul class="bullets"><li><span class="bdot dot-amber"></span><span>Operated autonomous vehicles while monitoring system performance and ensuring safety protocols</span></li><li><span class="bdot dot-amber"></span><span>Collected and reported data on vehicle performance, escalating issues to engineering teams</span></li></ul><hr style="border:none;border-top:1px solid #f0f0f0;margin:0 0 1rem"/><span class="impact imp-amber">Kept autonomous vehicles running safely and on schedule</span></div>
-    </div>
-
-    <!-- Lyft -->
-    <div class="job">
-      <div class="job-header"><div class="job-logo logo-pink">LY</div><div><p class="job-company">Lyft Inc.</p><p class="job-meta">Full-time · Aug 2019 – Aug 2020 · San Francisco Bay Area</p></div></div>
-      <div class="role-block"><p class="role">Bilingual Community Associate, Rentals Operations</p><p class="job-body">Joined a brand-new department with no structure yet. Helped build the operational foundation from scratch.</p><ul class="bullets"><li><span class="bdot dot-pink"></span><span>Managed daily scheduling, routing, and time optimization for efficient and reliable service</span></li><li><span class="bdot dot-pink"></span><span>Maintained high customer satisfaction through consistent quality, professionalism, and safety</span></li><li><span class="bdot dot-pink"></span><span>Adapted to real-time challenges and resolved issues independently in a dynamic environment</span></li></ul><hr style="border:none;border-top:1px solid #f0f0f0;margin:0 0 1rem"/><span class="impact imp-pink">Reduced operational errors by 30%</span></div>
-    </div>
-
-    <!-- Break travel -->
-    <div class="break-card"><div class="break-icon">✈</div><div><p class="break-label">Career break</p><p class="break-title">Travel, Brazil</p><p class="break-date">Sep 2018 – Jul 2019 · 11 months</p><p class="break-body">Took time to reconnect with roots and reflect on long-term direction, which ultimately led to pursuing more structured operations roles and the career path that followed.</p></div></div>
-
-    <!-- Apple -->
-    <div class="job">
-      <div class="job-header"><div class="job-logo logo-green">AP</div><div><p class="job-company">Apple Retail</p><p class="job-meta">Full-time · May 2015 – Aug 2018</p></div></div>
-      <div class="role-block"><p class="role">Technical Specialist</p><p class="role-meta">Nov 2017 – Aug 2018 · Berkeley, CA</p><ul class="bullets"><li><span class="bdot dot-green"></span><span>Diagnosed and resolved hardware and software issues with high customer satisfaction</span></li><li><span class="bdot dot-green"></span><span>Maintained strict adherence to data privacy and security policies</span></li><li><span class="bdot dot-green"></span><span>Identified recurring technical issues and contributed to process improvements</span></li></ul></div>
-      <div class="role-block"><p class="role">Sales Specialist</p><p class="role-meta">May 2015 – Nov 2017 · Germantown, TN & Berkeley, CA</p><ul class="bullets"><li><span class="bdot dot-green"></span><span>Delivered consultative support by assessing needs and recommending tailored solutions</span></li><li><span class="bdot dot-green"></span><span>Managed high-volume customer interactions while maintaining strong service quality</span></li></ul><hr style="border:none;border-top:1px solid #f0f0f0;margin:0 0 1rem"/><span class="impact imp-green">Grew from customer-facing sales into technical support, learning the product inside and out</span></div>
-    </div>
-
-    <div style="margin-top:3.5rem">
-    <span class="tag">Volunteer experience</span>
-    <h2 class="section-title">Giving back through technology.</h2>
-    <p class="intro-text">Outside of paid work, I give my time to the same goal: helping people build the digital skills they need for everyday life.</p>
-    </div>
-
-    <!-- digitalLIFT -->
-    <div class="job">
-      <div class="job-header"><div class="job-logo logo-teal">dL</div><div><p class="job-company">digitalLIFT (National Digital Inclusion Alliance)</p><p class="job-meta">Volunteer · Oct 2026 – Present · Remote</p></div></div>
-      <div class="role-block">
-        <p class="role">Volunteer Digital Navigator</p>
-        <ul class="bullets">
-          <li><span class="bdot dot-teal"></span><span>Give learners one-on-one remote help with getting connected, setting up devices, and signing in to online portals</span></li>
-          <li><span class="bdot dot-teal"></span><span>Assess each learner's digital skills and connect them with low-cost internet programs, telehealth tools, and community resources</span></li>
-          <li><span class="bdot dot-teal"></span><span>Teach online safety, account management, and basic troubleshooting to build lasting digital independence</span></li>
-        </ul>
-      </div>
+    <p class="section-label">Where I want to see myself</p>
+    <div class="goal-card">
+      <p class="goal-title">Supporting healthcare workflows that drive better patient care and efficient clinical flow.</p>
+      <p class="goal-body">I want to bring my operations, research, and digital navigation experience to a healthcare team, making the work behind patient care run smoothly so clinicians and patients can focus on what matters.</p>
+      <p class="goal-sub">Building toward it</p>
+      <div class="goal-group"><p class="goal-label">Education</p><div class="goal-chips"><span>Graduate coursework in Health Informatics, San José State University</span></div></div>
+      <div class="goal-group"><p class="goal-label">Specializations</p><div class="goal-chips"><span>EHR Workflows and Processes in Healthcare</span><span>Medical Office Manager</span><span>Goodwill® Digital Navigator</span><span>Digital Healthcare Informatics and AI (in progress)</span></div></div>
+      <div class="goal-group"><p class="goal-label">Certifications</p><div class="goal-chips"><span>Six Sigma Green Belt</span><span>HIPAA Awareness</span><span>CITI Good Clinical Practice (in progress)</span></div></div>
     </div>
 
   </div>
