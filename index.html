@@ -233,6 +233,11 @@ h1[tabindex]:focus{outline:none}
 .tc-feat-title{font-weight:700;font-size:15.5px;color:#132447;margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .tc-feat-text{font-size:14.5px;color:var(--muted);line-height:1.55}
 .tc-soon{font-size:11.5px;font-weight:700;color:#16806f;background:#e4f6f1;border-radius:999px;padding:2px 8px}
+.tc-cta{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:4px;padding:18px 20px;border-radius:14px;background:linear-gradient(120deg,#eef4fd,#e8f7f3);border:1px solid #dbe7f6}
+.tc-cta-title{font-family:'Fredoka','DM Sans',system-ui,sans-serif;font-weight:600;font-size:18px;color:#132447;margin-bottom:2px}
+.tc-cta-text{font-size:15px;color:var(--muted);line-height:1.55;max-width:56ch}
+.tc-cta-btn{background:linear-gradient(90deg,#2F6FD6,#1E9E8A);color:#fff;min-height:48px}
+.tc-cta-btn:hover{filter:brightness(1.07)}
 .chips-tc span{color:#1f5fc4;background:#eaf1fc}
 .chips-tc span:nth-child(even){color:#16806f;background:#e4f6f1}
 @media(max-width:760px){.tc-features{grid-template-columns:1fr}.tc-actions{width:100%;justify-content:space-between}}
@@ -635,7 +640,7 @@ h1[tabindex]:focus{outline:none}
       <div class="grid-2">
         <article class="card tc-card">
           <div class="tc-band">
-            <a class="tc-brand" href="https://tracingcare-demo.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Tracing Care">
+            <a class="tc-brand" href="https://www.tracing-care.com" target="_blank" rel="noopener noreferrer" aria-label="Open Tracing Care">
               <span class="tc-logo" aria-hidden="true"><svg viewBox="0 0 100 100" width="56" height="56">
                 <defs><linearGradient id="tcBeat" gradientUnits="userSpaceOnUse" x1="14" y1="50" x2="86" y2="50"><stop offset="0" stop-color="#4F8BEA"/><stop offset="1" stop-color="#5CC9B5"/></linearGradient></defs>
                 <path d="M84.93 41.29 A36 36 0 1 0 84.93 58.71" fill="none" stroke="url(#tcBeat)" stroke-width="5.5" stroke-linecap="round"/>
@@ -644,7 +649,7 @@ h1[tabindex]:focus{outline:none}
               </svg></span>
               <span><span class="tc-name">Tracing <span class="tc-care">Care</span></span><span class="tc-sub">Patient Portal &amp; EHR Practice Platform</span></span>
             </a>
-            <div class="tc-actions"><span class="status tc-status">In progress</span><a class="btn tc-btn" href="https://tracingcare-demo.vercel.app/" target="_blank" rel="noopener noreferrer">Try it <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg></a></div>
+            <div class="tc-actions"><span class="status tc-status">In progress</span><a class="btn tc-btn" href="https://www.tracing-care.com" target="_blank" rel="noopener noreferrer">Visit the site <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg></a></div>
           </div>
           <div class="tc-body">
             <p class="tc-intro">A safe place to practice using a patient portal before using the real thing. Every name and record is made up, and no login is required.</p>
@@ -654,6 +659,10 @@ h1[tabindex]:focus{outline:none}
               <div class="tc-feat"><span class="tc-ico" aria-hidden="true">🩺</span><p class="tc-feat-title">Staff training <span class="tc-soon">Coming next</span></p><p class="tc-feat-text">Guided screens for clinical, billing, and admin learners.</p></div>
             </div>
             <div class="chips chips-tc"><span>Patient Portals</span><span>EHR Training</span><span>Digital Health Literacy</span><span>Accessibility</span></div>
+            <div class="tc-cta">
+              <div><p class="tc-cta-title">See it for yourself</p><p class="tc-cta-text">Visit tracing-care.com to learn more about the project and try the practice portal. No sign-up needed.</p></div>
+              <a class="btn tc-cta-btn" href="https://www.tracing-care.com" target="_blank" rel="noopener noreferrer">Try the practice portal <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg></a>
+            </div>
           </div>
         </article>
       </div>
