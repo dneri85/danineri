@@ -8,7 +8,7 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230e5e86'/%3E%3Ctext x='32' y='42' font-family='Georgia, serif' font-size='26' fill='white' text-anchor='middle'%3EDN%3C/text%3E%3C/svg%3E"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;family=DM+Sans:wght@400;500;600;700&amp;family=Fredoka:wght@400;500;600&amp;display=swap"/>
 <script defer src="/_vercel/insights/script.js"></script>
 <style>
 :root{
@@ -213,6 +213,29 @@ h1[tabindex]:focus{outline:none}
 .accent-purple::before{background:#7a6ad8}.accent-orange::before{background:#e07b39}.accent-amber::before{background:#d4a32a}.accent-blue::before{background:#3b82c4}
 .work-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .work-card .chips{margin-top:2px}
+.tc-card{grid-column:1/-1;padding:0;overflow:hidden}
+.tc-band{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:22px clamp(20px,3vw,32px);background:linear-gradient(160deg,#172C55 0%,#12223F 55%,#173D47 100%)}
+.tc-brand{display:flex;align-items:center;gap:16px;text-decoration:none}
+.tc-logo{width:64px;height:64px;border-radius:17px;flex-shrink:0;background:linear-gradient(150deg,#213E76,#172E58);border:1px solid rgba(255,255,255,.12);box-sizing:border-box;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(5,14,35,.4);transition:transform .3s ease}
+.tc-brand:hover .tc-logo{transform:translateY(-2px) scale(1.04)}
+.tc-name{display:block;font-family:'Fredoka','DM Sans',system-ui,sans-serif;font-weight:500;font-size:clamp(24px,2.8vw,30px);color:#fff;line-height:1.1;letter-spacing:-.3px}
+.tc-care{background:linear-gradient(90deg,#4F8BEA,#5CC9B5);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tc-sub{display:block;margin-top:3px;font-family:'Fredoka','DM Sans',system-ui,sans-serif;font-weight:500;font-size:15px;color:#A3B1C6}
+.tc-actions{display:flex;align-items:center;gap:12px}
+.tc-status{color:#f3d9a4;background:rgba(243,217,164,.12)}
+.tc-btn{background:#fff;color:#132447;min-height:44px;padding:10px 18px;font-size:15px}
+.tc-btn:hover{background:#e9f4ff}
+.tc-body{padding:clamp(22px,3vw,30px) clamp(20px,3vw,32px);display:grid;gap:20px}
+.tc-intro{font-size:16.5px;color:var(--ink);line-height:1.65;max-width:70ch}
+.tc-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tc-feat{background:#f5f8fd;border:1px solid #e1e9f5;border-radius:14px;padding:16px 18px}
+.tc-ico{display:inline-flex;width:36px;height:36px;border-radius:10px;align-items:center;justify-content:center;background:#fff;border:1px solid #e1e9f5;font-size:17px;margin-bottom:10px}
+.tc-feat-title{font-weight:700;font-size:15.5px;color:#132447;margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tc-feat-text{font-size:14.5px;color:var(--muted);line-height:1.55}
+.tc-soon{font-size:11.5px;font-weight:700;color:#16806f;background:#e4f6f1;border-radius:999px;padding:2px 8px}
+.chips-tc span{color:#1f5fc4;background:#eaf1fc}
+.chips-tc span:nth-child(even){color:#16806f;background:#e4f6f1}
+@media(max-width:760px){.tc-features{grid-template-columns:1fr}.tc-actions{width:100%;justify-content:space-between}}
 .card-foot{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 
 /* ABOUT */
@@ -610,12 +633,28 @@ h1[tabindex]:focus{outline:none}
     <section class="sec" id="in-progress">
       <div class="sec-head"><p class="label">In progress</p><h2 class="sec-title">What I&rsquo;m building now.</h2></div>
       <div class="grid-2">
-        <article class="card work-card accent-blue">
-          <p class="meta">Web Application · UX &amp; Health Informatics</p>
-          <h3 class="card-title">Tracing Care Web Application</h3>
-          <p class="body">A patient-first health platform giving people real, granular control over their health data, who sees it, when, and why. Built with real-time data access logs, a caregiver hub, and ethical research participation tools. Grounded in peer-reviewed research and WCAG accessibility standards.</p>
-          <div class="chips chips-blue"><span>Patient Data Privacy</span><span>Healthcare Operations</span><span>UX Design</span><span>React</span></div>
-          <div class="card-foot"><a class="text-link" href="https://tracingcare-demo.vercel.app/login" target="_blank" rel="noopener noreferrer">View live demo <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg></a><span class="status status-ip">In progress</span></div>
+        <article class="card tc-card">
+          <div class="tc-band">
+            <a class="tc-brand" href="https://tracingcare-demo.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Tracing Care">
+              <span class="tc-logo" aria-hidden="true"><svg viewBox="0 0 100 100" width="56" height="56">
+                <defs><linearGradient id="tcBeat" gradientUnits="userSpaceOnUse" x1="14" y1="50" x2="86" y2="50"><stop offset="0" stop-color="#4F8BEA"/><stop offset="1" stop-color="#5CC9B5"/></linearGradient></defs>
+                <path d="M84.93 41.29 A36 36 0 1 0 84.93 58.71" fill="none" stroke="url(#tcBeat)" stroke-width="5.5" stroke-linecap="round"/>
+                <path d="M14 50 H28 Q31.5 44 35 50 H38 L42 32 L47 66 L51 50 H56 Q60 43 64 50 H76" fill="none" stroke="url(#tcBeat)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="86" cy="50" r="7" fill="#7EE8C4"/>
+              </svg></span>
+              <span><span class="tc-name">Tracing <span class="tc-care">Care</span></span><span class="tc-sub">Patient Portal &amp; EHR Practice Platform</span></span>
+            </a>
+            <div class="tc-actions"><span class="status tc-status">In progress</span><a class="btn tc-btn" href="https://tracingcare-demo.vercel.app/" target="_blank" rel="noopener noreferrer">Try it <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg></a></div>
+          </div>
+          <div class="tc-body">
+            <p class="tc-intro">A safe place to practice using a patient portal before using the real thing. Every name and record is made up, and no login is required.</p>
+            <div class="tc-features">
+              <div class="tc-feat"><span class="tc-ico" aria-hidden="true">🎓</span><p class="tc-feat-title">Guided practice</p><p class="tc-feat-text">Six everyday portal tasks for patients and families, with bigger text and hints.</p></div>
+              <div class="tc-feat"><span class="tc-ico" aria-hidden="true">🧭</span><p class="tc-feat-title">Explore freely</p><p class="tc-feat-text">Move around the portal as Robin Merriweather, a made-up patient.</p></div>
+              <div class="tc-feat"><span class="tc-ico" aria-hidden="true">🩺</span><p class="tc-feat-title">Staff training <span class="tc-soon">Coming next</span></p><p class="tc-feat-text">Guided screens for clinical, billing, and admin learners.</p></div>
+            </div>
+            <div class="chips chips-tc"><span>Patient Portals</span><span>EHR Training</span><span>Digital Health Literacy</span><span>Accessibility</span></div>
+          </div>
         </article>
       </div>
     </section>
